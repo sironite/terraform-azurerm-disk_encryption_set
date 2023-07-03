@@ -13,7 +13,7 @@ module "disk_encryption_set" {
   source  = "sironite/disk_encryption_set/azurerm"
   version = "X.X.X"
 
-  name                      = "my-disk-encryption-set"
+  disk_encryption_set_name  = "my-disk-encryption-set"
   resource_group_name       = "my-resource-group"
   location                  = "westeurope"
   key_vault_key_id          = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/my-resource-group/providers/Microsoft.KeyVault/vaults/my-key-vault/keys/my-key"
@@ -46,9 +46,9 @@ No modules.
 
 | Name | Description | Type | Required |
 |------|-------------|------|:--------:|
-| azure\_location | Location of the resource group. | `string` | yes |
 | disk\_encryption\_set\_name | Name of the disk encryption set. | `string` | yes |
 | key\_vault\_key\_id | ID of the key vault key. | `string` | yes |
+| location | Location of the resource group. | `string` | yes |
 | resource\_group\_name | Name of the resource group. | `string` | yes |
 | auto\_key\_rotation\_enabled | Whether to enable auto key rotation. | `bool` | no |
 | encryption\_type | Type of encryption. | `string` | no |
