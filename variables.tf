@@ -8,7 +8,7 @@ variable "resource_group_name" {
   description = "Name of the resource group."
 }
 
-variable "azure_location" {
+variable "location" {
   type        = string
   description = "Location of the resource group."
 }
@@ -33,17 +33,17 @@ variable "encryption_type" {
 variable "federated_client_id" {
   type        = string
   description = "ID of the federated client."
-  default     = ""
+  default     = null
 }
 
 variable "identity_type" {
   type        = string
   description = "Type of identity."
-  default     = "systemAssigned"
+  default     = "SystemAssigned"
 }
 
 variable "identity_ids" {
   type        = list(string)
   description = "List of identity IDs."
-  default     = [null]
+  default     = []
 }
