@@ -8,9 +8,9 @@ content: |-
 
   # Usage - Module
 
-  ## Network Watcher Flow Log
+  ## Disk Encryption Set
   ```hcl
-  {{ include "examples/network-watcher-flow-log-example/main.tf" }}
+  {{ include "examples/DES/main.tf" }}
   ```
 
   {{ .Providers }}
