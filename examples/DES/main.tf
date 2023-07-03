@@ -2,7 +2,7 @@
 
 module "disk_encryption_set" {
   source  = "sironite/disk_encryption_set/azurerm"
-version = "X.X.X"
+  version = "X.X.X"
 
   name                      = "my-disk-encryption-set"
   resource_group_name       = "my-resource-group"

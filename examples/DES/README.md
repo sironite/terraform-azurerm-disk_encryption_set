@@ -12,8 +12,6 @@ Using the modules requires the following pre-requisites:
 `Disk Encryption Set`
 
 ```hcl
-
-
 module "disk_encryption_set" {
   source  = "sironite/disk_encryption_set/azurerm"
   version = "X.X.X"
@@ -28,9 +26,6 @@ module "disk_encryption_set" {
     type = "SystemAssigned"
   }
 }
-
-
-
 
 ```
 
