@@ -62,6 +62,7 @@ No modules.
 |------|-------------|
 | disk\_encryption\_set\_id | The ID of the disk encryption set. |
 | disk\_encryption\_set\_name | The name of the disk encryption set. |
+| disk\_encryption\_set\_principal\_id | The principal ID of the disk encryption set. |
 
 ## Related documentation
 <!-- END_TF_DOCS -->
